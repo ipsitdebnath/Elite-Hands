@@ -17,15 +17,15 @@ header {
 }
 
 .nav-links {
-    display: flex; /* Arranges Home, Search, and Cart in a row */
-    justify-content: space-between; /* Spreads them out */
-    align-items: center; /* Vertically centers them */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .home {
     display: flex;
     align-items: center;
-    gap: 20px; /* Space between logo and links */
+    gap: 20px;
 }
 
 .home a {
@@ -117,7 +117,7 @@ section:nth-of-type(2) li:hover {
 
 section:nth-of-type(2) h4 {
     margin-bottom: 10px;
-    color: #000;
+    color: #000000;
 }
 
 section:nth-of-type(2) button {
@@ -258,4 +258,51 @@ section:nth-of-type(3) ul {
     color: #888;
     padding-top: 20px;
     border-top: 1px solid #444; 
+}
+#cities{
+padding: 10px;
+border: 1px solid grey;
+border-radius: 6px;
+width: 140px;
+}
+.textbox>h2{
+margin-bottom:5px ;
+font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+div.textbox{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+margin-left: 10px;
+box-sizing: border-box;
+}
+div.home{
+margin-right: 10px;
+box-sizing: border-box;
+}
+.explore{
+position: sticky;
+top: 0px;
+background-color: rgb(249,249,249);
+padding: 30px;
+}
+.home li a {
+    position: relative;
+    padding-bottom: 4px;
+}
+
+.home li a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0%;
+    height: 2px;
+    background-color: black;
+    transition: 0.6s ease;
+}
+
+.home li a:hover::after {
+    width: 100%;
 }
